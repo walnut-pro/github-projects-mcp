@@ -1,0 +1,34 @@
+{
+  "name": "github-projects-mcp",
+  "version": "1.0.0",
+  "description": "A TypeScript MCP server for GitHub Projects management",
+  "type": "module",
+  "main": "./build/index.js",
+  "bin": {
+    "github-projects-mcp": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "dev": "npm run build && node build/index.js",
+    "start": "node build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@octokit/graphql": "^8.0.0",
+    "@octokit/rest": "^20.0.0",
+    "dotenv": "^16.5.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "github",
+    "projects",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT"
+}
