@@ -41,7 +41,7 @@ GITHUB_TOKEN="your_github_token_here"
 必要な権限:
 - `repo` - リポジトリアクセス
 - `project` - GitHub Projects V2アクセス
-- `read:org` - 組織プロジェクト（組織のプロジェクトを管理する場合）
+  - `read:project` - 組織プロジェクト（組織のプロジェクトを管理する場合）
 
 ### 3. プロジェクトのビルド
 
