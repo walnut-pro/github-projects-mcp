@@ -51,10 +51,16 @@ npm run build
 
 ### 4. Claude Codeでの設定
 
+### 4.1. プロジェクトに適用
 ターミナルで以下を実行
 
 ```bash
 claude mcp add github-projects -e GITHUB_TOKEN=XXXXXXXX -- node /Users/xxxxx/works/github-projects-mcp/build/index.js
 ```
 
-**注意**: `.env`ファイルを使用する場合、環境変数は自動的に読み込まれます。
+### 4.1. スコープをユーザーにして適用
+ターミナルで以下を実行
+
+```bash
+claude mcp add github-projects -s user -e GITHUB_TOKEN=XXXXXXXX -- node /Users/xxxxx/works/github-projects-mcp/build/index.js
+```
